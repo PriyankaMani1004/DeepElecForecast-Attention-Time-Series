@@ -1,0 +1,30 @@
+Dataset Information – DeepElecForecast Project
+
+The dataset used in this project was obtained for academic purposes / self-collected
+and is not publicly redistributable.
+
+Due to file size limitations and data usage restrictions, the full dataset is not
+included in this repository.
+
+To reproduce this project:
+- Use any electricity demand time series dataset
+- Ensure it follows the column format described in the README
+- Place the dataset at the following path:
+
+data/raw/electricity.csv
+
+A small sample dataset is included in this folder to demonstrate the expected data format.
+
+src/data_loader.py
+import os
+import pandas as pd
+
+def load_data():
+    data_path = "data/raw/electricity.csv"
+
+    if not os.path.exists(data_path):
+        raise FileNotFoundError("Dataset not found. Please place the dataset at "
+            "'data/raw/electricity.csv' as described in DATASET_INFO.txt." )
+
+    return pd.read_csv(data_path)
+
