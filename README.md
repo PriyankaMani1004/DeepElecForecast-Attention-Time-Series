@@ -243,26 +243,23 @@ MAE
 
 ### Baseline LSTM
 
-RMSE: 0.0703
-
-MAE:  0.0343
+RMSE: 0.0700
+MAE:  0.0362
 
 ### LSTM with Attention
 
-RMSE: 0.0727
-
-MAE: 0.0377
+RMSE: 0.0713
+MAE: 0.0356
 
 Lower error compared to baseline
-
 Better generalization on test data
 
 ## Model Comparison Summary
 
-| Model            | Architecture             | Attention | Multi-Step Forecast | RMSE   | MAE    | Interpretability |
-|------------------|--------------------------|-----------|---------------------|--------|--------|------------------|
-| LSTM Baseline    | Stacked LSTM + Dense     | No        |     Yes (Direct)    | 0.0703 | 0.0343 |  Low             |
-| LSTM + Attention | Encoder LSTM + Attention | Yes       |      Yes (Seq2Seq)  | 0.0727 | 0.0377 | High             |
+| Model            |  Attention   | Multi-Step Forecast | RMSE   | MAE    | Interpretability |
+|------------------|--------------|---------------------|--------|--------|------------------|
+| LSTM Baseline    |    No        |     Yes (Direct)    | 0.0700 | 0.0362 |  Low             |
+| LSTM + Attention |    Yes       |     Yes (Seq2Seq)   | 0.0713 | 0.0356 | High             |
 
 ### Key Observations
 - Both models support **multi-step forecasting**, but the attention-based model uses a **Seq2Seq strategy**, making it more robust for longer horizons.
