@@ -1,4 +1,6 @@
-# DeepElecForecast-Attention-Time-Series
+# DeepElecForecast-Attention-Time-Series:
+
+## Project Overview:
 Deep learning–based electricity demand forecasting using LSTM and attention mechanisms with model comparison and interpretability.
 
 - **LSTM Baseline Model**
@@ -12,6 +14,9 @@ Deep learning–based electricity demand forecasting using LSTM and attention me
 - **Modular Python scripts**
 
 - **Jupyter notebooks for EDA, tuning, and predictions**
+
+ **Note**: The full dataset is not included due to size and usage restrictions.
+Detailed dataset instructions are provided in `data/DATASET_INFO.txt`.
 
 The repository is designed to be clear, modular, and beginner-friendly.
 
